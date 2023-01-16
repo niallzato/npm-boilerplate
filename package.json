@@ -1,5 +1,5 @@
 {
-  "name": "@segment/analytics-react-native-plugin-glitch",
+  "name": "my-segment-dest-plugin",
   "version": "0.4.0",
   "description": "The hassle-free way to add Segment analytics to your React-Native app.",
   "keywords": [
@@ -28,5 +28,14 @@
   },
   "engines": {
     "node": ">=12"
-  }
+  },
+  "main": "babel.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niallzato/npm-boilerplate.git"
+  },
+  "author": "zato"
 }
