@@ -10,8 +10,7 @@ import {
   import identify from './methods/identify';
 import track from './methods/track';
 
-  
-  export class AppsflyerPlugin extends DestinationPlugin {
+  export class Glitchplugin extends DestinationPlugin {
     type = PluginType.destination;
     key = 'Glitch';
   
@@ -20,16 +19,14 @@ import track from './methods/track';
   
     update(settings: SegmentAPISettings, _: UpdateType) {
   
-      const appsflyerSettings = settings.integrations[
+      const glitchSettings = settings.integrations[
         this.key
       ] as SegmentGlitchSettings;
-  
-      console.log("in update");
     }
   
     identify(event: IdentifyEventType) {
-      identify(event);
-      return event;
+        identify(event);
+        return event;
     }
   
     track(event: TrackEventType) {
